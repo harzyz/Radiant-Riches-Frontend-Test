@@ -115,8 +115,21 @@
   }
   .signUpContainer {
     flex-direction: column;
+    align-items: center;
   }
   .signUpContainer > div {
     width: 100%;
+  }
+  .signUpContainer input {
+    width: 180px;
+  }
+  .signUpContainer h2 {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .signUpBtn {
+    font-size: 12px;
+    width: 80px;
   }
 }/*# sourceMappingURL=relatedDeals.module.css.map */
