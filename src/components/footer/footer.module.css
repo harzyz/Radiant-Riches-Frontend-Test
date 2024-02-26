@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  background-color: #212731;
+  height: 400px;
+  color: #B6BDC4;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding-top: 50px;
+}
+
+.selectCountry {
+  background-color: transparent;
+  border: none;
+  color: #B6BDC4;
+  font-family: "Inter";
+  font-size: 16px;
+}/*# sourceMappingURL=footer.module.css.map */

@@ -1,0 +1,126 @@
+.wrapper{
+  position: relative;
+  width: 100%;
+  background-color: #FFF;
+  height: 100%;
+  display: flex;
+}
+.circle{
+  position: absolute;
+  top: 50px;
+  left: -22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #E1E4E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+}
+.showMore{
+  color: #1B88F4;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.showMoreIcon{
+  font-size: 25px;
+}
+.itemImage{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.itemContent{
+  width: 60%;
+  height: 100%;
+  // border: 2px solid blue;
+  padding: 10px;
+}
+.itemRatings{
+  width: 20%;
+  height: 100%;
+  // border: 2px solid red;
+  padding: 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100%;
+}
+.second{
+  padding-left: 12px;
+}
+.ratingBadge{
+  width: 110px;
+  background-color: #F3F9FF;
+  height: 105px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #074786;
+}
+.ratingBadge h1{
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+.ratingBadge p{
+  margin: 0;
+}
+.viewBtn{
+  background-color: #1B88F4;
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Inter';
+  color: #FFF;
+}
+.starRatings{
+  color: #FFB80F;
+  font-size: 13px;
+}
+.moreContent{
+  width: 100%;
+  background-color: #FFF4ED;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+.moreContent p{
+  margin: 0;
+}
+.moreContent > div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.moreContent span{
+  background-color: #FFF;
+  color: #1B88F4;
+  padding: 3px;
+}
+.indicator{
+  position: absolute;
+  top: -17px;
+  left: -5px;
+  background-color: #FF7724;
+  font-size: 16px;
+  border-radius: 0 8px 8px 0;
+  width: fit-content;
+  padding: 10px;
+  color: #FFF;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
