@@ -4,6 +4,7 @@
   background-color: #FFF;
   height: 100%;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .circle{
   position: absolute;
@@ -123,4 +124,33 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.modalWrapper{
+  width: 700px;
+  padding: 50px;
+}
+@media screen and (max-width: 700px) {
+  .wrapper{
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .modalWrapper{
+    width: 100%;
+    padding: 20px;
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+  .circle{
+    left: 15px;
+  }
+  .itemImage{
+    width: 100%;
+  }
+  .itemContent{
+    width: 100%;
+  }
+  .itemRatings{
+    width: 100%;
+    gap: 20px;
+  }
 }

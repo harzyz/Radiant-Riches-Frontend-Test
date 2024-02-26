@@ -9,22 +9,24 @@ const RelatedDeals = () => {
       <h1>Related deals you might like for</h1>
       <div className={styles.deals}>
         {RelatedDealsData.map((item) => (
-          <div key={item.id} className={styles.dealsItem}>
-            <div>
-              <img src={desktop} alt="" />
+          <div  key={item.id}>
+            <div className={styles.dealsItem}>
+              <div>
+                <img src={desktop} alt="" />
+              </div>
+              <div className={styles.discount}>
+                <span>{item.discount}</span>
+                <span>Limited time</span>
+              </div>
+              <h5>{item.product}</h5>
+              <p>{item.desc}</p>
+              <div className={styles.prices}>
+                <p>{item.priceNew}</p>
+                <p>{item.priceOld}</p>
+                <p>{item.priceOff}</p>
+              </div>
+              <ViewButton label={'View Deal'} />
             </div>
-            <div className={styles.discount}>
-              <span>{item.discount}</span>
-              <span>Limited time</span>
-            </div>
-            <h5>{item.product}</h5>
-            <p>{item.desc}</p>
-            <div className={styles.prices}>
-              <p>{item.priceNew}</p>
-              <p>{item.priceOld}</p>
-              <p>{item.priceOff}</p>
-            </div>
-            <ViewButton label={'View Deal'} />
           </div>
         ))}
       </div>

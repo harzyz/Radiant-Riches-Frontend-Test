@@ -16,21 +16,23 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={styles.navbar}>
-      <GiHamburgerMenu onClick={toggleOpen} className={styles.hamburger} />
-      <div className={styles.search}>
-        <CiSearch className={styles.searchIcon} />
-        <input type="text" />
+    <nav>
+      <div className={styles.navbar}>
+        <GiHamburgerMenu onClick={toggleOpen} className={styles.hamburger} />
+        <div className={styles.search}>
+          <CiSearch className={styles.searchIcon} />
+          <input type="text" />
+        </div>
+
+        <div onClick={toggleClose} className={menu ? styles.navListWrapper : styles.closeListWrapper}><IoCloseSharp onClick={toggleClose} className={styles.closeIcon} /></div>
+
+        <ul className={menu ? styles.navList : styles.closeList}>
+          <li>Categories</li>
+          <li>Website Builders</li>
+          <li>Today's deals</li>
+        </ul>
+
       </div>
-
-      <div onClick={toggleClose} className={menu ? styles.navListWrapper : styles.closeListWrapper}><IoCloseSharp onClick={toggleClose} className={styles.closeIcon} /></div>
-
-      <ul className={menu ? styles.navList : styles.closeList}>
-        <li>Categories</li>
-        <li>Website Builders</li>
-        <li>Today's deals</li>
-      </ul>
-
     </nav>
   )
 }
