@@ -1,4 +1,4 @@
-import styles from "./viewButton.module.css";
+import styles from "./viewButton.module.scss";
 
 const ViewButton = ({ label, onTap }) => {
   return (

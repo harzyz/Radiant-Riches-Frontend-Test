@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './modal.module.css'
+import styles from './modal.module.scss'
 
 const Modal = ({ isOpen, onClose, children }) => {
   const toggleBodyOverflow = open => {

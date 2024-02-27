@@ -37,8 +37,9 @@
   width: 20%;
   height: 100%;
   display: flex;
+  margin: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -55,7 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100%;
+  gap: 80px;
 }
 
 .second {
@@ -143,7 +144,7 @@
 }
 
 .modalWrapper {
-  width: 700px;
+  width: 800px;
   padding: 50px;
 }
 

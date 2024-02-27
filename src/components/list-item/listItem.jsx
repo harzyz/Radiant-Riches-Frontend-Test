@@ -90,7 +90,6 @@ const ListItem = ({
             <IoStar />
           </div>
         </div>
-        {/* <button onClick={()=> setView(true)} className={styles.viewBtn}>View</button> */}
         <ViewButton label={"View"} onTap={onTouch} />
       </div>
 
