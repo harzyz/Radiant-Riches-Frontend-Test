@@ -3,11 +3,14 @@ import { CiCircleCheck } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import ListItem from "../list-item/listItem";
-import { listItemData } from "../list-item/listItemData";
 import RelatedDeals from "../related-deals/relatedDeals";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useContext } from "react";
+import SearchContext from "../../context/searchContext";
 
 const Mainsection = () => {
+  const { filteredItems } = useContext(SearchContext)
+
   return (
     <section className={styles.wrapper}>
       <h1>Best Website builders in the US</h1>
@@ -47,7 +50,7 @@ const Mainsection = () => {
       </div>
 
       <div className={styles.listGroup}>
-        {listItemData.map((item) => (
+        {filteredItems.map((item) => (
           <ListItem
             key={item.id}
             productName={item.productName}
