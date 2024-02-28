@@ -9,7 +9,7 @@ import { useContext } from "react";
 import SearchContext from "../../context/searchContext";
 
 const Mainsection = () => {
-  const { filteredItems } = useContext(SearchContext)
+  const { filteredItems, noItemsFound } = useContext(SearchContext)
 
   return (
     <section className={styles.wrapper}>
@@ -49,21 +49,23 @@ const Mainsection = () => {
         <MdKeyboardArrowRight />
       </div>
 
-      <div className={styles.listGroup}>
-        {filteredItems.map((item) => (
-          <ListItem
-            key={item.id}
-            productName={item.productName}
-            best={item.best}
-            tag={item.id}
-            title={item.title1}
-            content1={item.content1}
-            content2={item.content2}
-            comment={item.comment}
-            ratings={item.rating}
-          />
-        ))}
-      </div>
+      {noItemsFound ? <h1 style={{color: '#000456'}}>No Items Found</h1> : 
+        <div className={styles.listGroup}>
+          {filteredItems.map((item) => (
+            <ListItem
+              key={item.id}
+              productName={item.productName}
+              best={item.best}
+              tag={item.id}
+              title={item.title1}
+              content1={item.content1}
+              content2={item.content2}
+              comment={item.comment}
+              ratings={item.rating}
+            />
+          ))}
+        </div>
+      }
       <RelatedDeals />
     </section>
   );
