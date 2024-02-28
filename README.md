@@ -1,8 +1,8 @@
 ## This is my submision for RRLLC Test 
 ## Responsiveness for Mobile View 
 ## Added Features:
-# Search Item by name
-# Modal pop-up to view Item
+## 1. Search Item by name
+## 2. Modal pop-up to view Item
 
 
 
