@@ -5,7 +5,7 @@ const SearchContext = createContext()
   
 export const SearchProvider = ({children}) => {
   const [item, setItem] = useState('')
-  const [filteredItems, setFilteredItems] = useState([])
+  const [filteredItems, setFilteredItems] = useState(listItemData)
 
   const handlesearch = (e) => {
     const keyword = e.target.value;
